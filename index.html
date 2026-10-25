@@ -26,6 +26,11 @@
         display: flex;
         list-style: none;
         gap: 1.5rem;
+        
+      }
+      .flex-container {
+        display: flex;
+        justify-content: center;
       }
       .nav-links a {
         transition: color 0.2s ease;
@@ -51,11 +56,13 @@
   <body>
     <header>
       <nav>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#games">Games</a></li>
-          <li><a href="#apps">Apps</a></li>
-        </ul>
+        <div class="flex-container">
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#apps">Apps</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <section id="home" class="page">
